@@ -3,35 +3,53 @@
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 <meta content="utf-8" http-equiv="encoding">
 
+<head>
+  <link rel="stylesheet" href="lib/css/styles.css">
+</head>
+
+<body>
 
 
-<form accept-charset=utf-8>
-    <input id="input_a" type="number">
-    <input id="input_b" type="number">
-    <input id="input_c" type="number">
+    <form accept-charset=utf-8>
+        <input id="input_a" type="number">
+        <input id="input_b" type="number">
+        <input id="input_c" type="number">
     
-    <button type="button" id="submitButton">Submit</button>
-</form>
+        <button type="button" id="submitButton">Submit</button>
+    </form>
+
+    Your Input Volume: <div id="user_input_volume"></div>
 
 
-<div>
-    <div style="width:100px;" id="luggage_volume_undersize_results"></div>
-    <div style="width:100px;" id="luggage_volume_equals_results"></div>
-    <div style="width:100px;" id="luggage_volume_oversize_results"></div>
+    <div class="container">
+        <div class="column" id="luggage_volume_undersize_results">
+            <span>Undersize</span>
+        </div>
+        <div class="column" id="luggage_volume_equals_results">
+            <span>Equals</span>
+        </div>
+        <div class="column" id="luggage_volume_oversize_results">
+            <span>Oversize</span>
+        </div>
+    </div>
     
-</div>
+    
+</body>
 
-<script src="lib/js/third-party/jquery-3.2.1.min.js"></script>
-<script src="lib/js/third-party/underscore-prod-1.8.3.js"></script>
-<script src="lib/js/Modules.js"></script>
-<script src="lib/js/Logger.js"></script>
-<script src="lib/js/JqueryCache.js"></script>
-<script src="lib/js/InputReader.js"></script>
-<script src="lib/js/UserInput.js"></script>
-<script src="lib/js/LuggageParser.js"></script>
-<script src="lib/js/LuggageDimensions.js"></script>
-<script src="lib/js/Luggage.js"></script>
-
+<footer>
+    <script src="lib/js/third-party/jquery-3.2.1.min.js"></script>
+    <script src="lib/js/third-party/underscore-prod-1.8.3.js"></script>
+    <script src="lib/js/MODULES.js"></script>
+    <script src="lib/js/Logger.js"></script>
+    <script src="lib/js/Globals.js"></script>   
+    <script src="lib/js/UnderscoreMixins.js"></script>
+    <script src="lib/js/JqueryCache.js"></script>
+    <script src="lib/js/DomWriter.js"></script>
+    <script src="lib/js/DomReader.js"></script>
+    <script src="lib/js/LuggageParser.js"></script>
+    <script src="lib/js/LuggageDimensions.js"></script>
+    <script src="lib/js/Luggage.js"></script>
+</footer>
 
 
 

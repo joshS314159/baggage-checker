@@ -1,0 +1,13 @@
+
+.container {
+  display: table;
+}
+
+.row {
+  display: table-row;
+}
+
+.column {
+  display: table-cell;
+}
+
