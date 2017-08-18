@@ -22,7 +22,7 @@
 
 
     <div class="container">
-        
+        <div>
         <div class="column">
             <span>Undersize</span>
             <div id="luggage_volume_undersize_results"></div>
@@ -39,6 +39,28 @@
             <span>Oversize</span>
             <div id="luggage_volume_oversize_results"></div>
         </div>
+        
+        
+        
+
+        
+        
+        <div class="column">
+            <span>Undersize</span>
+            <div id="luggage_dimensions_undersize_results"></div>
+        </div>
+        
+        
+        <div class="column">
+            <span>Equals</span>
+            <div id="luggage_dimensions_equals_results"></div>
+        </div>
+        
+        
+        <div class="column">
+            <span>Oversize</span>
+            <div id="luggage_dimensions_oversize_results"></div>
+        </div>
     </div>
     
     
@@ -53,10 +75,12 @@
     <script src="lib/js/Logger.js"></script>
     <script src="lib/js/UnderscoreMixins.js"></script>
     <script src="lib/js/Requester.js"></script>   
-    <script src="lib/js/DimensionScraper.js"></script>   
+    <script src="lib/js/DataScraper.js"></script>   
     
     <script src="lib/js/JqueryCache.js"></script>
     <script src="lib/js/DomWriter.js"></script>
+    <script src="lib/js/VolumeResultsWriter.js"></script>
+    <script src="lib/js/DimensionsResultsWriter.js"></script>
     <script src="lib/js/DomReader.js"></script>
     <script src="lib/js/LuggageParser.js"></script>
     <script src="lib/js/LuggageDimensions.js"></script>
