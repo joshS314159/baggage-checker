@@ -15,7 +15,7 @@
         <input id="input_b" type="number">
         <input id="input_c" type="number">
     
-        <button type="button" id="submitButton">Submit</button>
+        <button type="button" id="submitButton" disabled>Submit</button>
     </form>
 
     Your Input Volume: <div id="user_input_volume"></div>
@@ -58,6 +58,11 @@
             <span>Airline</span>
             <div id="luggage_dimensions_airline_name"></div>
         </div>
+
+        <div class="column">
+            <span>Airline Dimensions</span>
+            <div id="luggage_volume_airline_dimensions"></div>
+        </div>
         
         <div class="column">
             <span>Undersize</span>
@@ -92,10 +97,11 @@
     <script src="lib/js/MODULES.js"></script>
     <script src="lib/js/Logger.js"></script>
     <script src="lib/js/UnderscoreMixins.js"></script>
+    <script src="lib/js/JqueryCache.js"></script>
     <script src="lib/js/Requester.js"></script>   
+    <script src="lib/js/DomWriter.js"></script>
     <script src="lib/js/DataScraper.js"></script>   
     
-    <script src="lib/js/JqueryCache.js"></script>
     <script src="lib/js/DomWriter.js"></script>
     <script src="lib/js/VolumeResultsWriter.js"></script>
     <script src="lib/js/DimensionsResultsWriter.js"></script>
